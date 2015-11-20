@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		054D19E11BFF468A00D53644 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054D19E01BFF468A00D53644 /* AppDelegate.swift */; };
+		054D19E41BFF468A00D53644 /* Dynamic_Animation_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 054D19E21BFF468A00D53644 /* Dynamic_Animation_Game.xcdatamodeld */; };
+		054D19E61BFF468A00D53644 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054D19E51BFF468A00D53644 /* ViewController.swift */; };
+		054D19E91BFF468A00D53644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054D19E71BFF468A00D53644 /* Main.storyboard */; };
+		054D19EB1BFF468A00D53644 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054D19EA1BFF468A00D53644 /* Images.xcassets */; };
+		054D19EE1BFF468A00D53644 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054D19EC1BFF468A00D53644 /* LaunchScreen.xib */; };
+		054D19FA1BFF468A00D53644 /* Dynamic_Animation_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054D19F91BFF468A00D53644 /* Dynamic_Animation_GameTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		054D19F41BFF468A00D53644 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 054D19D31BFF468A00D53644 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 054D19DA1BFF468A00D53644;
+			remoteInfo = "Dynamic Animation Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		054D19DB1BFF468A00D53644 /* Dynamic Animation Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dynamic Animation Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		054D19DF1BFF468A00D53644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		054D19E01BFF468A00D53644 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		054D19E31BFF468A00D53644 /* Dynamic_Animation_Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dynamic_Animation_Game.xcdatamodel; sourceTree = "<group>"; };
+		054D19E51BFF468A00D53644 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		054D19E81BFF468A00D53644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		054D19EA1BFF468A00D53644 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		054D19ED1BFF468A00D53644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		054D19F31BFF468A00D53644 /* Dynamic Animation GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dynamic Animation GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		054D19F81BFF468A00D53644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		054D19F91BFF468A00D53644 /* Dynamic_Animation_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic_Animation_GameTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		054D19D81BFF468A00D53644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054D19F01BFF468A00D53644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		054D19D21BFF468A00D53644 = {
+			isa = PBXGroup;
+			children = (
+				054D19DD1BFF468A00D53644 /* Dynamic Animation Game */,
+				054D19F61BFF468A00D53644 /* Dynamic Animation GameTests */,
+				054D19DC1BFF468A00D53644 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		054D19DC1BFF468A00D53644 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				054D19DB1BFF468A00D53644 /* Dynamic Animation Game.app */,
+				054D19F31BFF468A00D53644 /* Dynamic Animation GameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		054D19DD1BFF468A00D53644 /* Dynamic Animation Game */ = {
+			isa = PBXGroup;
+			children = (
+				054D19E01BFF468A00D53644 /* AppDelegate.swift */,
+				054D19E51BFF468A00D53644 /* ViewController.swift */,
+				054D19E71BFF468A00D53644 /* Main.storyboard */,
+				054D19EA1BFF468A00D53644 /* Images.xcassets */,
+				054D19EC1BFF468A00D53644 /* LaunchScreen.xib */,
+				054D19E21BFF468A00D53644 /* Dynamic_Animation_Game.xcdatamodeld */,
+				054D19DE1BFF468A00D53644 /* Supporting Files */,
+			);
+			path = "Dynamic Animation Game";
+			sourceTree = "<group>";
+		};
+		054D19DE1BFF468A00D53644 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				054D19DF1BFF468A00D53644 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		054D19F61BFF468A00D53644 /* Dynamic Animation GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				054D19F91BFF468A00D53644 /* Dynamic_Animation_GameTests.swift */,
+				054D19F71BFF468A00D53644 /* Supporting Files */,
+			);
+			path = "Dynamic Animation GameTests";
+			sourceTree = "<group>";
+		};
+		054D19F71BFF468A00D53644 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				054D19F81BFF468A00D53644 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		054D19DA1BFF468A00D53644 /* Dynamic Animation Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 054D19FD1BFF468A00D53644 /* Build configuration list for PBXNativeTarget "Dynamic Animation Game" */;
+			buildPhases = (
+				054D19D71BFF468A00D53644 /* Sources */,
+				054D19D81BFF468A00D53644 /* Frameworks */,
+				054D19D91BFF468A00D53644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dynamic Animation Game";
+			productName = "Dynamic Animation Game";
+			productReference = 054D19DB1BFF468A00D53644 /* Dynamic Animation Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		054D19F21BFF468A00D53644 /* Dynamic Animation GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 054D1A001BFF468A00D53644 /* Build configuration list for PBXNativeTarget "Dynamic Animation GameTests" */;
+			buildPhases = (
+				054D19EF1BFF468A00D53644 /* Sources */,
+				054D19F01BFF468A00D53644 /* Frameworks */,
+				054D19F11BFF468A00D53644 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				054D19F51BFF468A00D53644 /* PBXTargetDependency */,
+			);
+			name = "Dynamic Animation GameTests";
+			productName = "Dynamic Animation GameTests";
+			productReference = 054D19F31BFF468A00D53644 /* Dynamic Animation GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		054D19D31BFF468A00D53644 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Liguo Jiao";
+				TargetAttributes = {
+					054D19DA1BFF468A00D53644 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					054D19F21BFF468A00D53644 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 054D19DA1BFF468A00D53644;
+					};
+				};
+			};
+			buildConfigurationList = 054D19D61BFF468A00D53644 /* Build configuration list for PBXProject "Dynamic Animation Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 054D19D21BFF468A00D53644;
+			productRefGroup = 054D19DC1BFF468A00D53644 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				054D19DA1BFF468A00D53644 /* Dynamic Animation Game */,
+				054D19F21BFF468A00D53644 /* Dynamic Animation GameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		054D19D91BFF468A00D53644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054D19E91BFF468A00D53644 /* Main.storyboard in Resources */,
+				054D19EE1BFF468A00D53644 /* LaunchScreen.xib in Resources */,
+				054D19EB1BFF468A00D53644 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054D19F11BFF468A00D53644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		054D19D71BFF468A00D53644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054D19E61BFF468A00D53644 /* ViewController.swift in Sources */,
+				054D19E41BFF468A00D53644 /* Dynamic_Animation_Game.xcdatamodeld in Sources */,
+				054D19E11BFF468A00D53644 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		054D19EF1BFF468A00D53644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				054D19FA1BFF468A00D53644 /* Dynamic_Animation_GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		054D19F51BFF468A00D53644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 054D19DA1BFF468A00D53644 /* Dynamic Animation Game */;
+			targetProxy = 054D19F41BFF468A00D53644 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		054D19E71BFF468A00D53644 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				054D19E81BFF468A00D53644 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		054D19EC1BFF468A00D53644 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				054D19ED1BFF468A00D53644 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		054D19FB1BFF468A00D53644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		054D19FC1BFF468A00D53644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		054D19FE1BFF468A00D53644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dynamic Animation Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		054D19FF1BFF468A00D53644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dynamic Animation Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		054D1A011BFF468A00D53644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dynamic Animation GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dynamic Animation Game.app/Dynamic Animation Game";
+			};
+			name = Debug;
+		};
+		054D1A021BFF468A00D53644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dynamic Animation GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dynamic Animation Game.app/Dynamic Animation Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		054D19D61BFF468A00D53644 /* Build configuration list for PBXProject "Dynamic Animation Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054D19FB1BFF468A00D53644 /* Debug */,
+				054D19FC1BFF468A00D53644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		054D19FD1BFF468A00D53644 /* Build configuration list for PBXNativeTarget "Dynamic Animation Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054D19FE1BFF468A00D53644 /* Debug */,
+				054D19FF1BFF468A00D53644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		054D1A001BFF468A00D53644 /* Build configuration list for PBXNativeTarget "Dynamic Animation GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				054D1A011BFF468A00D53644 /* Debug */,
+				054D1A021BFF468A00D53644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		054D19E21BFF468A00D53644 /* Dynamic_Animation_Game.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				054D19E31BFF468A00D53644 /* Dynamic_Animation_Game.xcdatamodel */,
+			);
+			currentVersion = 054D19E31BFF468A00D53644 /* Dynamic_Animation_Game.xcdatamodel */;
+			path = Dynamic_Animation_Game.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 054D19D31BFF468A00D53644 /* Project object */;
+}
