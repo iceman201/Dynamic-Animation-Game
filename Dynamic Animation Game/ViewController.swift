@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBAction func dropDown(sender: AnyObject) {
         drop()
     }
+    //TODO: add gravity
+
     @IBOutlet weak var smallBox: UIView!
     var dropSize: CGSize {
         let size = backgroundView.bounds.size.width / CGFloat(dropRow)
