@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     func drop() {
         var frame = CGRect(origin: CGPointZero, size: dropSize)
         frame.origin.x = CGFloat.random(dropRow) * dropSize.width
-        print(frame.origin.x)
+        print(frame.origin.x, terminator: "")
         let dropView = UIView(frame: frame)
         dropView.backgroundColor = UIColor.random
         backgroundView.addSubview(dropView)
