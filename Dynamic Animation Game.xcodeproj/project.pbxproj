@@ -159,6 +159,8 @@
 		054D19D31BFF468A00D53644 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Liguo Jiao";
 				TargetAttributes = {
@@ -413,6 +415,7 @@
 				054D19FF1BFF468A00D53644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		054D1A001BFF468A00D53644 /* Build configuration list for PBXNativeTarget "Dynamic Animation GameTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +424,7 @@
 				054D1A021BFF468A00D53644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
