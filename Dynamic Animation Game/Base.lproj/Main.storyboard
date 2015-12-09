@@ -16,6 +16,12 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lee.png" translatesAutoresizingMaskIntoConstraints="NO" id="sbC-oX-kbn">
+                                <rect key="frame" x="275" y="530" width="50" height="50"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -25,6 +31,7 @@
                     </view>
                     <connections>
                         <outlet property="backgroundView" destination="kh9-bI-dsS" id="O7M-KD-6w5"/>
+                        <outlet property="boss" destination="sbC-oX-kbn" id="V83-MT-FzT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -34,6 +41,10 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="390" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lee.png" width="50" height="50"/>
+    </resources>
 </document>
