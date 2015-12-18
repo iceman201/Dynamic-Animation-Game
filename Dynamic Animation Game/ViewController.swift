@@ -9,15 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var boss: UIImageView!
     @IBOutlet var backgroundView: UIView!
-    @IBAction func dropDown(sender: AnyObject) {
-        drop()
-    }
     
     let gravity = UIGravityBehavior()
     var dropRow = 10
     var location = CGPoint(x: 0, y: 0)
+    var scoreCounter = 0
+    var speedTimer = 0.5
     var dropSize: CGSize {
         let size = backgroundView.bounds.size.width / CGFloat(dropRow)
         return CGSize(width: size, height: size)
@@ -47,23 +45,17 @@ class ViewController: UIViewController {
         gravity.addItem(dropView)
         collider.addItem(dropView)
     }
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        let touch : UITouch! = touches.first
-        location = touch.locationInView(self.view)
-        boss.center.x = location.x
-    }
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        let touch : UITouch! = touches.first
-        location = touch.locationInView(self.view)
-        boss.center.x = location.x
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         animator.addBehavior(gravity)
         animator.addBehavior(collider)
-        boss.center = CGPointMake(270, 542)
         // Do any additional setup after loading the view, typically from a nib.
+        
+        var timer = NSTimer()
+        timer.invalidate()
+        timer = NSTimer.scheduledTimerWithTimeInterval(speedTimer, target: self, selector: "drop", userInfo: nil, repeats: true)
+        
     }
 
     override func didReceiveMemoryWarning() {
