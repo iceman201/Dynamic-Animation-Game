@@ -17,24 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbQ-vZ-OYK">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbQ-vZ-OYK">
+                                <rect key="frame" x="277" y="228" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="t4Q-mP-RJW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g29-AE-4Dg">
+                                <rect key="frame" x="277" y="304" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g29-AE-4Dg">
-                                <rect key="frame" x="277" y="361" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihn-Yo-1uH">
+                                <rect key="frame" x="277" y="342" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihn-Yo-1uH">
-                                <rect key="frame" x="277" y="399" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECk-2S-8Xz">
-                                <rect key="frame" x="277" y="323" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="12112176_10206698064403695_8578646068651079107_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AW4-7l-LXH">
+                                <rect key="frame" x="184" y="28" width="232" height="183"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g29-AE-4Dg" firstAttribute="centerX" secondItem="UFr-uE-YQF" secondAttribute="centerX" id="2Jy-nt-wiD"/>
+                            <constraint firstItem="g29-AE-4Dg" firstAttribute="leading" secondItem="KbQ-vZ-OYK" secondAttribute="leading" id="4Ib-9g-CtZ"/>
+                            <constraint firstItem="Ihn-Yo-1uH" firstAttribute="top" secondItem="g29-AE-4Dg" secondAttribute="bottom" constant="8" symbolic="YES" id="AoR-Il-Z59"/>
+                            <constraint firstItem="g29-AE-4Dg" firstAttribute="top" secondItem="KbQ-vZ-OYK" secondAttribute="bottom" constant="46" id="Suu-Az-nMx"/>
+                            <constraint firstItem="KbQ-vZ-OYK" firstAttribute="top" secondItem="WAk-s7-JuV" secondAttribute="bottom" constant="208" id="dNh-Dq-dl6"/>
+                            <constraint firstItem="g29-AE-4Dg" firstAttribute="leading" secondItem="Ihn-Yo-1uH" secondAttribute="leading" id="iHd-wL-WHQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hah-OL-uO9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -64,4 +75,7 @@
             <point key="canvasLocation" x="811" y="438"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="12112176_10206698064403695_8578646068651079107_n.jpg" width="960" height="960"/>
+    </resources>
 </document>
