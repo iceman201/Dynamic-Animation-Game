@@ -11,13 +11,15 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var backgroundView: UIView!
     
+    @IBOutlet var score: UILabel!
+    
     let gravity = UIGravityBehavior()
     var dropRow = 10
     var location = CGPoint(x: 0, y: 0)
     var scoreCounter = 0
-    var speedTimer = 0.5
+    var speedTimer = 1.5
     var dropSize: CGSize {
-        let size = backgroundView.bounds.size.width / CGFloat(dropRow)
+        let size = (backgroundView.bounds.size.width / CGFloat(dropRow))*2
         return CGSize(width: size, height: size)
     }
     
@@ -34,25 +36,31 @@ class ViewController: UIViewController {
     func drop() {
         var frame = CGRect(origin: CGPointZero, size: dropSize)
         frame.origin.x = CGFloat.random(dropRow) * dropSize.width
-        
-        print(frame.origin.x)
-        
         let dropView = UIView(frame: frame)
+       // print(frame.origin.x)
+        let tap = UITapGestureRecognizer(target: self, action: Selector("scored:"))
+        print(dropView.frame.origin.y)
         dropView.backgroundColor = UIColor.random
-        dropView.contentMode = UIViewContentMode.ScaleAspectFit
-        
+        dropView.contentMode = UIViewContentMode.ScaleToFill
+        dropView.addGestureRecognizer(tap)
         backgroundView.addSubview(dropView)
         gravity.addItem(dropView)
-        collider.addItem(dropView)
+        //collider.addItem(dropView)
+    }
+    func scored(tap: UITapGestureRecognizer){
+        scoreCounter += 1
+        score.text = "\(scoreCounter)"
+        if tap.state == .Ended {
+            tap.view?.removeFromSuperview()
+        }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        var timer = NSTimer()
+        
         animator.addBehavior(gravity)
         animator.addBehavior(collider)
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        var timer = NSTimer()
         timer.invalidate()
         timer = NSTimer.scheduledTimerWithTimeInterval(speedTimer, target: self, selector: "drop", userInfo: nil, repeats: true)
         
