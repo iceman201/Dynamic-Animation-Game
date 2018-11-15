@@ -34,35 +34,35 @@ class ViewController: UIViewController {
     }()
     
     func drop() {
-        var frame = CGRect(origin: CGPointZero, size: dropSize)
+        var frame = CGRect(origin: CGPoint.zero, size: dropSize)
         frame.origin.x = CGFloat.random(dropRow) * dropSize.width
         let dropView = UIView(frame: frame)
        // print(frame.origin.x)
-        let tap = UITapGestureRecognizer(target: self, action: Selector("scored:"))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.scored(_:)))
         print(dropView.frame.origin.y)
         dropView.backgroundColor = UIColor.random
-        dropView.contentMode = UIViewContentMode.ScaleToFill
+        dropView.contentMode = UIViewContentMode.scaleToFill
         dropView.addGestureRecognizer(tap)
         backgroundView.addSubview(dropView)
         gravity.addItem(dropView)
         //collider.addItem(dropView)
     }
-    func scored(tap: UITapGestureRecognizer){
+    func scored(_ tap: UITapGestureRecognizer){
         scoreCounter += 1
         score.text = "\(scoreCounter)"
-        if tap.state == .Ended {
+        if tap.state == .ended {
             tap.view?.removeFromSuperview()
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var timer = NSTimer()
+        var timer = Timer()
         
         animator.addBehavior(gravity)
         animator.addBehavior(collider)
         timer.invalidate()
-        timer = NSTimer.scheduledTimerWithTimeInterval(speedTimer, target: self, selector: "drop", userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: speedTimer, target: self, selector: #selector(ViewController.drop), userInfo: nil, repeats: true)
         
     }
 
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
 }
 
 private extension CGFloat {
-    static func random(max: Int) -> CGFloat {
+    static func random(_ max: Int) -> CGFloat {
         return CGFloat(arc4random() % UInt32(max))
     }
 }
