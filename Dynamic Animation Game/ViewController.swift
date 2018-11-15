@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         return createCollider
     }()
     
-    func drop() {
+    @objc func drop() {
         var frame = CGRect(origin: CGPoint.zero, size: dropSize)
         frame.origin.x = CGFloat.random(dropRow) * dropSize.width
         let dropView = UIView(frame: frame)
@@ -41,13 +41,13 @@ class ViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.scored(_:)))
         print(dropView.frame.origin.y)
         dropView.backgroundColor = UIColor.random
-        dropView.contentMode = UIViewContentMode.scaleToFill
+        dropView.contentMode = UIView.ContentMode.scaleToFill
         dropView.addGestureRecognizer(tap)
         backgroundView.addSubview(dropView)
         gravity.addItem(dropView)
         //collider.addItem(dropView)
     }
-    func scored(_ tap: UITapGestureRecognizer){
+    @objc func scored(_ tap: UITapGestureRecognizer){
         scoreCounter += 1
         score.text = "\(scoreCounter)"
         if tap.state == .ended {
