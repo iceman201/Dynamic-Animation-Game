@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tangiwai.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

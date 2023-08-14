@@ -93,7 +93,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if coordinator == nil {
             return nil
         }
-        var managedObjectContext = NSManagedObjectContext()
+        var managedObjectContext = NSManagedObjectContext(.mainQueue)
         managedObjectContext.persistentStoreCoordinator = coordinator
         return managedObjectContext
     }()
